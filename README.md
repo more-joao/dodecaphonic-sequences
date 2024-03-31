@@ -1,5 +1,5 @@
 # Dodecaphonic Sequences and Prime Form Reduction
-A somewhat constructive approach to finding dodecaphonic sequences of interest.
+A somewhat constructive approach to finding dodecaphonic sequences of interest using python (3.0+).
 
 ## About and Explanation
 
