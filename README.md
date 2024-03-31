@@ -18,16 +18,17 @@ This equivalence is of great matter, since it allows us to reduce any PC set to 
 
 A more in-depth explanation can be found [here](https://musictheory.pugetsound.edu/mt21c/SetTheorySection.html).
 
-**On Dodecaphonic Sequences of Interest (main focus)** - *dodecaphonic_sequences.py*
+**On Dodecaphonic Sequences of Interest** - *dodecaphonic_sequences.py*
 
-A dodecaphonic sequence is any sequence of pitches [p0, ..., p11]. Note that a rotation of a sequence is any of the variations originated from transposing one of its pitches; e.g:
+A dodecaphonic sequence is any sequence of pitches [p<sub>0</sub>, ..., p<sub>11</sub>]. Note that a rotation of a sequence is any of the variations originated from transposing one of its pitches; e.g:
 
 <img src="rotations_ex.png" alt="Example of rotations for a given sequence">
 
 Our work aimed to answer the following:
-**Given a heptatonic scale [p0, ..., p6], are there any dodecaphonic sequences within this scale that contain all possible PC set classes (for trichords) through some number of rotations?**
+**Given a heptatonic scale [p<sub>0</sub>, ..., p<sub>6</sub>], are there any dodecaphonic sequences within this scale that contain all possible PC set classes (for trichords) through some number of rotations?**
 
 Here is one of the many results; this one for the scale [0, 1, 3, 4, 5, 7, 9]:
+
 <img src="result_ex.png" alt="Result example">
 
 All results are in the *results.txt* file.
@@ -36,7 +37,7 @@ All results are in the *results.txt* file.
 
 Instead of an analytical approach, which would require going through all permutations of length 12 for all 12 pitches, a more constructive-inclined method was chosen.
 
-Lemma 1: every PC set class (for trichords) has a representative of the form [0,a,b], a, b being pitches represented by natural numbers such that 0 <= a,b < 12. This implies that every sequence has a rotation of the form [0, p1, ..., p11].
+> Lemma 1: every PC set class has a representative of the form [0, p1, ..., p<sub>n</sub>], with every p<sub>n</sub> being a pitch represented by a natural number such that 0 <= p<sub>n</sub> < 12. This implies that every sequence has a rotation of the form [0, p<sub>1</sub>, ..., p<sub>11</sub>].
 
 By lemma 1, we know that it's possible to restrict ourselves to sequences that start with 0. Moreover, the algorithm builds sequences by appending adequate trichords to a given trichord of the form [0,a,b], thus creating only satisfying sequences.
 
@@ -44,4 +45,4 @@ The process is recursive. For every possible trichord T = [0,a,b] within a given
 
 ## Running
 
-Just download both *primeform_reduction.py* and *dodecaphonic_sequences.py* into the same folder and run. It will take some time, but the results will be progressively added to a text file inside the same folder, *valid_sequences.py*.
+Just download both *primeform_reduction.py* and *dodecaphonic_sequences.py* into the same folder and run the latter, changing parameters as you see fit. It will take some time, but the results will be progressively added to a text file inside the same folder, *valid_sequences.py*.
