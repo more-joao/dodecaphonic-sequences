@@ -20,16 +20,14 @@ A more in-depth explanation can be found [here](https://musictheory.pugetsound.e
 
 **On Dodecaphonic Sequences of Interest** - *dodecaphonic_sequences.py*
 
-A dodecaphonic sequence is any sequence of pitches [p<sub>0</sub>, ..., p<sub>11</sub>]. Note that a rotation of a sequence is any of the variations originated from transposing one of its pitches; e.g:
-
-<img src="rotations_ex.png" alt="Example of rotations for a given sequence">
+A dodecaphonic sequence is any sequence of pitches [p<sub>0</sub>, ..., p<sub>11</sub>]. Note that a rotation of a sequence is any of the variations originated from transposing one of its pitches. See the image right below.
 
 Our work aimed to answer the following:
 **Given a heptatonic scale [p<sub>0</sub>, ..., p<sub>6</sub>], are there any dodecaphonic sequences within this scale that contain all possible PC set classes (for trichords) through some number of rotations?**
 
 Here is one of the many results; this one for the scale [0, 1, 3, 4, 5, 7, 9]:
 
-<img src="result_ex.png" alt="Result example">
+<img src="result_example.png" alt="Result example">
 
 All results are in the *results.txt* file.
 
