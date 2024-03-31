@@ -33,7 +33,7 @@ Here is one of the many results; this one for the scale [0, 1, 3, 4, 5, 7, 9]:
 
 All results are in the *results.txt* file.
 
-**How the Algorithm Works***
+**How the Algorithm Works**
 
 Instead of an analytical approach, which would require going through all permutations of length 12 for all 12 pitches, a more constructive-inclined method was chosen.
 
