@@ -29,7 +29,7 @@ Here is one of the many results; this one for the scale [0, 1, 3, 4, 5, 7, 9]:
 
 <img src="result_example.PNG" alt="Result example">
 
-All results are in the *results.txt* file.
+All results are in the *results.txt* file, which contains every sequence found for each valid scale. Observe that some scales simply don't allow representatives of one (or more) classes; those would be the invalid scales. One can check the validity of a scale at [this calculator](https://www.mta.ca/pc-set/calculator/pc_calculate.html).
 
 **How the Algorithm Works**
 
