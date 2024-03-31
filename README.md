@@ -27,7 +27,7 @@ Our work aimed to answer the following:
 
 Here is one of the many results; this one for the scale [0, 1, 3, 4, 5, 7, 9]:
 
-<img src="result_example.png" alt="Result example">
+<img src="result_example.PNG" alt="Result example">
 
 All results are in the *results.txt* file.
 
